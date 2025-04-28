@@ -135,11 +135,11 @@ body {
 
 @media (max-width: 767.98px) {
   .about-wrapper {
-      margin-left: 0;
+    margin-left: 0;
   }
 
   .about-wrapper .after {
-      display: none;
+    display: none;
   }
 }
 
@@ -154,25 +154,25 @@ body {
 
 @media (min-width: 576px) {
   .container {
-      max-width: 540px;
+    max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-      max-width: 720px;
+    max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-      max-width: 960px;
+    max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-      max-width: 1140px;
+    max-width: 1140px;
   }
 }
 
@@ -269,23 +269,23 @@ body {
 
 @media (max-width: 768px) {
   #testmonial .row {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   #testmonial .col-sm-10,
   #testmonial .col-md-4 {
-      width: 80%;
+    width: 80%;
   }
 }
 
 @media (max-width: 480px) {
   #testmonial h3 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .testmonial-wrapper p {
-      font-size: 14px;
+    font-size: 14px;
   }
 }
 
@@ -364,13 +364,85 @@ body {
 
 @media (max-width: 768px) {
   .row {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .col-md-4 {
-      width: 80%;
-      margin-bottom: 20px;
+    width: 80%;
+    margin-bottom: 20px;
   }
 }
 
+/* Vision Section */
+.vision-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f5f7fa;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.container-box {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+}
+
+.container-box .logo img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.container-box .title {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.container-box .content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .vision-section {
+    padding: 20px 10px;
+    height: auto;
+  }
+
+  .container-box {
+    padding: 30px 20px;
+  }
+
+  .container-box .title {
+    font-size: 28px;
+  }
+
+  .container-box .content p {
+    font-size: 16px;
+  }
+}
