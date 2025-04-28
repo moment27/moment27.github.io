@@ -1,1 +1,137 @@
-
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fondo con imagen */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: url('img/classsscraftinscrib.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Contenedor principal */
+  .form-container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  /* Logo */
+  .logo {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  /* Título */
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Botón Google */
+  .google-btn {
+    width: 100%;
+    background: white;
+    color: #555;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+  }
+  
+  .google-btn:hover {
+    background: #f1f1f1;
+  }
+  
+  /* Formulario */
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Inputs */
+  input, select {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  /* Agrupar inputs */
+  .form-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Botón enviar */
+  .submit-btn {
+    background: #00aa5b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: #008b4a;
+  }
+  
+  /* Footer */
+  .footer-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .footer-text a {
+    color: #00aa5b;
+    text-decoration: none;
+  }
+  
+  .footer-text a:hover {
+    text-decoration: underline;
+  }
+  
+  .google-btn {
+    width: 100%;
+    background: white;
+    color: #555;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+  }
+  
+  .google-btn:hover {
+    background: #f1f1f1;
+  }
+  
