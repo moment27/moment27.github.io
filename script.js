@@ -81,5 +81,5 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation();
       showOptions(btn.parentElement, nameEl);
     });
-  });
+  }),
 });
