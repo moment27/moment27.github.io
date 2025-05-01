@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function createClassElement(name, alumnos = 0) {
     const li = document.createElement('li');
-    li.className = 'flex items-center justify-between px-4 py-3 hover:bg-gray-50 cursor-pointer';
+    li.className = 'flex items-center justify-between px-4 py-3 hover:bg-gray-50 cursor-pointer relative';
 
     const nameContainer = document.createElement('div');
+
     const nameP = document.createElement('p');
     nameP.className = 'text-[18px] font-normal text-gray-900';
     nameP.textContent = name;
@@ -34,13 +35,16 @@ document.addEventListener('DOMContentLoaded', () => {
   function showOptions(li, nameEl) {
     const options = document.createElement('div');
     options.className = 'absolute z-50 bg-white border border-gray-200 rounded shadow-md text-sm';
+
     options.innerHTML = `
       <button class="block px-4 py-2 hover:bg-gray-100 w-full text-left edit-btn">Editar</button>
       <button class="block px-4 py-2 hover:bg-gray-100 w-full text-left text-red-500 delete-btn">Eliminar</button>
     `;
 
     document.body.appendChild(options);
+
     const rect = li.getBoundingClientRect();
+    options.style.position = 'absolute';
     options.style.top = `${rect.top + window.scrollY + 40}px`;
     options.style.left = `${rect.left + window.scrollX + 30}px`;
 
@@ -81,5 +85,5 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation();
       showOptions(btn.parentElement, nameEl);
     });
-  }),
+  });
 });
